@@ -7,12 +7,14 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 
 import { RouterModule } from '@angular/router';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
@@ -20,6 +22,7 @@ import { RouterModule } from '@angular/router';
     RouterModule.forRoot([
       {path: 'about', component: AboutComponent},
       {path: 'contact', component: ContactComponent},
+      {path: '**', component: PageNotFoundComponent},
     ]),
   ],
   providers: [],
