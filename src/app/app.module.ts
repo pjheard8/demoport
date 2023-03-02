@@ -10,6 +10,7 @@ import { RouterModule } from '@angular/router';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { EducationComponent } from './education/education.component';
 import { ExperienceComponent } from './experience/experience.component';
+import { SkillsComponent } from './skills/skills.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ExperienceComponent } from './experience/experience.component';
     ContactComponent,
     PageNotFoundComponent,
     EducationComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,
@@ -28,6 +30,7 @@ import { ExperienceComponent } from './experience/experience.component';
       {path: 'contact', component: ContactComponent},
       {path: 'education', component: EducationComponent},
       {path: 'experience', component: ExperienceComponent},
+      {path: 'skills', component: SkillsComponent},
       {path: '', redirectTo: 'about', pathMatch: 'full'},
       {path: '**', component: PageNotFoundComponent},
     ]),
