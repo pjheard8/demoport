@@ -8,13 +8,15 @@ import { ContactComponent } from './contact/contact.component';
 
 import { RouterModule } from '@angular/router';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { EducationComponent } from './education/education.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutComponent,
     ContactComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    EducationComponent
   ],
   imports: [
     BrowserModule,
@@ -22,6 +24,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     RouterModule.forRoot([
       {path: 'about', component: AboutComponent},
       {path: 'contact', component: ContactComponent},
+      {path: 'education', component: EducationComponent},
       {path: '', redirectTo: 'about', pathMatch: 'full'},
       {path: '**', component: PageNotFoundComponent},
     ]),
