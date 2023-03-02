@@ -22,6 +22,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     RouterModule.forRoot([
       {path: 'about', component: AboutComponent},
       {path: 'contact', component: ContactComponent},
+      {path: '', redirectTo: 'about', pathMatch: 'full'},
       {path: '**', component: PageNotFoundComponent},
     ]),
   ],
